@@ -142,7 +142,8 @@
                 <executions>
                     <execution>
                         <id>versions</id>
-                        <phase>validate</phase>
+                        <!-- 停用：建置時自動把 spigot-api 改成最新版，會改到 pom、同一個 commit 建出不同結果。要升 API 版本時手動改上面的 dependency -->
+                        <phase>none</phase>
                         <configuration>
                             <allowSnapshots>true</allowSnapshots>
                         </configuration>
