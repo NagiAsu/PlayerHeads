@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.shininet.bukkit</groupId>
         <artifactId>PlayerHeads-compatibility</artifactId>
-        <version>5.21.10-SNAPSHOT</version>
+        <version>5.21.10.0</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>PlayerHeads-compatibility-api</artifactId>
@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.shininet.bukkit</groupId>
             <artifactId>PlayerHeads-base-api</artifactId>
-            <version>5.21.10-SNAPSHOT</version>
+            <version>5.21.10.0</version>
         </dependency>
 
     </dependencies>

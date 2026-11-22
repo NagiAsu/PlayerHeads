@@ -8,7 +8,7 @@
     <parent>
         <artifactId>PlayerHeads</artifactId>
         <groupId>org.shininet.bukkit</groupId>
-        <version>5.21.10-SNAPSHOT</version>
+        <version>5.21.10.0</version>
     </parent>
     
 
@@ -42,13 +42,13 @@
             <!-- This shouldn't be a dep which is packaging: pom -->
             <groupId>${project.groupId}</groupId>
             <artifactId>PlayerHeads-api</artifactId>
-            <version>5.21.10-SNAPSHOT</version>
+            <version>5.21.10.0</version>
         </dependency>
         <dependency>
             <!-- This shouldn't be a dep which is packaging: pom -->
             <groupId>${project.groupId}</groupId>
             <artifactId>PlayerHeads-compatibility-lib</artifactId>
-            <version>5.21.10-SNAPSHOT</version>
+            <version>5.21.10.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>fr.neatmonster</groupId>
@@ -142,7 +142,8 @@
                 <executions>
                     <execution>
                         <id>versions</id>
-                        <phase>validate</phase>
+                        <!-- 停用：建置時自動把 spigot-api 改成最新版，會改到 pom、同一個 commit 建出不同結果。要升 API 版本時手動改上面的 dependency -->
+                        <phase>none</phase>
                         <configuration>
                             <allowSnapshots>true</allowSnapshots>
                         </configuration>

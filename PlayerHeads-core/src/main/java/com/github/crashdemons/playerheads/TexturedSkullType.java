@@ -178,6 +178,7 @@ public enum TexturedSkullType implements HeadType {
             "http://textures.minecraft.net/texture/1c797482a14bfcb877257cb2cff1b6e6a8b8413336ffb4c29a6139278b436b"
     ),
     WITHER_SKELETON(
+            CompatibleSkullMaterial.WITHER_SKELETON,
             "c5b5a5a5-8a1d-4c0b-8e9f-5dd4ac8ab9d6",
             "http://textures.minecraft.net/texture/7953b6c68448e7e6b6bf8fb273d7203acd8e1be19e81481ead51f45de59a8"
     ),
